@@ -8,15 +8,17 @@ self.addEventListener('install', evento =>{
     const promesa =caches.open(CACHE)
     .then(cache=>{
     return cache.addAll([
-    '/',
-    '/index.html',
-    '/css/styles.css',
-    '/css/icons.css',
-    '/css/londinium-theme.css',
-    '/css/googleapi.css',
-    '/js/app.js',
-    '/images/no-img.jpg',
-    '/offline.html'
+    // '/',
+    'index.html',
+    'css/styles.css',
+    'css/icons.css',
+    'css/londinium-theme.css',
+    'css/googleapi.css',
+    'js/app.js',
+    'js/bootstrap.min.js',
+    'images/no-img.jpg',
+    'offline.html',
+    'form.html'
     ]);
     });
 
